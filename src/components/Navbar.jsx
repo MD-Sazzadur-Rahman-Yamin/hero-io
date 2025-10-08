@@ -6,9 +6,15 @@ import { Github } from "lucide-react";
 const Navbar = () => {
   const links = (
     <>
-      <li className="btn btn-ghost">Home</li>
-      <li className="btn btn-ghost">App</li>
-      <li className="btn btn-ghost">Installation</li>
+      <NavLink to="/">
+        <li className="btn btn-ghost">Home</li>
+      </NavLink>
+      <NavLink to="apps">
+        <li className="btn btn-ghost">App</li>
+      </NavLink>
+      <NavLink to="installation">
+        <li className="btn btn-ghost">Installation</li>
+      </NavLink>
     </>
   );
   return (

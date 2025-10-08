@@ -1,5 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
 .font-inter {
   font-family: "Inter", sans-serif;
 }
-@import "tailwindcss";
-@plugin "daisyui";
+.active{
+   @apply border-b-4 border-blue-500
+}
