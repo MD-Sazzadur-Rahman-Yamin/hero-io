@@ -45,7 +45,7 @@ const Navbar = () => {
                 {links}
               </ul>
             </div>
-            <Link to='/' className="btn btn-ghost text-xl">
+            <Link to="/" className="btn btn-ghost text-xl">
               <span>
                 <img className="w-6" src={loge} alt="logo" />
               </span>
@@ -59,7 +59,7 @@ const Navbar = () => {
             <a
               href="https://github.com/MD-Sazzadur-Rahman-Yamin/hero-io"
               target="_blank"
-              className="btn"
+              className="btn bg-linear-65 from-[#632EE3] to-[#9F62F2] text-white"
             >
               <Github />
               <span>Contribution</span>
