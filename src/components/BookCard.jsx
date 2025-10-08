@@ -5,7 +5,7 @@ const BookCard = ({ trandingSingleAppData }) => {
     const { image, title, downloads, ratingAvg } = trandingSingleAppData;
     console.log(trandingSingleAppData);
   return (
-    <div className="p-4 bg-white flex flex-col justify-center gap-4 rounded-2xl shadow hover:shadow-2xl transform hover:-translate-y-2 duration-200 ease-linear">
+    <div className="p-4 bg-white flex flex-col justify-center gap-4 rounded-2xl shadow hover:shadow-2xl transform hover:-translate-y-2 duration-200 ease-linear cursor-pointer">
       <div className="max-h-72 max-w-72 mx-auto">
         <img className="mx-auto" src={image} alt={title} />
       </div>

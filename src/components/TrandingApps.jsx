@@ -10,7 +10,7 @@ const TrandingApps = ({ trandingAppData }) => {
         <p className="text-[#627382] mt-4">
           Explore All Trending Apps on the Market developed by us
         </p>
-        <div className="my-10 grid grid-cols-4 gap-4">
+        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {trandingAppData.map((trandingSingleAppData) => (
             <BookCard
               trandingSingleAppData={trandingSingleAppData}
