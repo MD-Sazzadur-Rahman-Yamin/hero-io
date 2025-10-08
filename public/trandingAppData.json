@@ -1,0 +1,266 @@
+[
+    {
+        "image": "wa.jpg",
+        "title": "WhatsApp Messenger",
+        "companyName": "Meta Platforms, Inc.",
+        "id": 1,
+        "description": "WhatsApp Messenger is a widely used app that helps users connect with friends and family across the world, with a focus on fast, reliable communication and a simple user interface. discover, create, and share content—ranging from photos and short videos to long-form media—while providing strong privacy controls and customization. allow creators to publish, monetize, and grow an audience using analytics and promotion tools. The app regularly receives updates to improve performance, security, and user experience.",
+        "size": 303.4,
+        "reviews": 1110960,
+        "ratingAvg": 4.27,
+        "downloads": 5000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 33329
+            },
+            {
+                "name": "2 star",
+                "count": 44439
+            },
+            {
+                "name": "3 star",
+                "count": 88877
+            },
+            {
+                "name": "4 star",
+                "count": 388836
+            },
+            {
+                "name": "5 star",
+                "count": 645479
+            }
+        ]
+    },
+    {
+        "image": "facebook.jpg",
+        "title": "Facebook",
+        "companyName": "Meta Platforms, Inc.",
+        "id": 2,
+        "description": "Facebook is a widely used app that helps users organize daily life with powerful tools, personalized recommendations, and seamless integrations with other services. discover, create, and share content—ranging from photos and short videos to long-form media—while providing strong privacy controls and customization. provide secure, cloud-based storage and collaboration tools that let users access files from any device and work together in real-time. The app regularly receives updates to improve performance, security, and user experience.",
+        "size": 50.5,
+        "reviews": 423208,
+        "ratingAvg": 4.27,
+        "downloads": 1000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 12696
+            },
+            {
+                "name": "2 star",
+                "count": 16928
+            },
+            {
+                "name": "3 star",
+                "count": 33857
+            },
+            {
+                "name": "4 star",
+                "count": 148123
+            },
+            {
+                "name": "5 star",
+                "count": 223504
+            }
+        ]
+    },
+    {
+        "image": "instra.jpg",
+        "title": "Instagram",
+        "companyName": "Meta Platforms, Inc.",
+        "id": 3,
+        "description": "Instagram is a widely used app that helps users connect with friends and family across the world, with a focus on fast, reliable communication and a simple user interface. discover, create, and share content—ranging from photos and short videos to long-form media—while providing strong privacy controls and customization. help professionals network, find job opportunities, and stay informed with industry news and educational content. The app regularly receives updates to improve performance, security, and user experience.",
+        "size": 42.8,
+        "reviews": 350434,
+        "ratingAvg": 4.27,
+        "downloads": 1000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 10513
+            },
+            {
+                "name": "2 star",
+                "count": 14017
+            },
+            {
+                "name": "3 star",
+                "count": 28034
+            },
+            {
+                "name": "4 star",
+                "count": 122651
+            },
+            {
+                "name": "5 star",
+                "count": 184219
+            }
+        ]
+    },
+    {
+        "image": "TikTok.png",
+        "title": "TikTok",
+        "companyName": "TikTok Pte. Ltd.",
+        "id": 4,
+        "description": "TikTok is a widely used app that helps users discover, create, and share content—ranging from photos and short videos to long-form media—while providing strong privacy controls and customization. allow creators to publish, monetize, and grow an audience using analytics and promotion tools. deliver high-quality streaming experiences, smart search, and tailored suggestions based on user preferences and behavior. The app regularly receives updates to improve performance, security, and user experience.",
+        "size": 92.3,
+        "reviews": 2352440,
+        "ratingAvg": 4.27,
+        "downloads": 5000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 70573
+            },
+            {
+                "name": "2 star",
+                "count": 94098
+            },
+            {
+                "name": "3 star",
+                "count": 188196
+            },
+            {
+                "name": "4 star",
+                "count": 823354
+            },
+            {
+                "name": "5 star",
+                "count": 1171219
+            }
+        ]
+    },
+    {
+        "image": "YouTube.png",
+        "title": "YouTube",
+        "companyName": "Google LLC",
+        "id": 5,
+        "description": "YouTube is a widely used app that helps users deliver high-quality streaming experiences, smart search, and tailored suggestions based on user preferences and behavior. discover, create, and share content—ranging from photos and short videos to long-form media—while providing strong privacy controls and customization. allow creators to publish, monetize, and grow an audience using analytics and promotion tools. The app regularly receives updates to improve performance, security, and user experience.",
+        "size": 153.2,
+        "reviews": 1780440,
+        "ratingAvg": 4.27,
+        "downloads": 5000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 53413
+            },
+            {
+                "name": "2 star",
+                "count": 71284
+            },
+            {
+                "name": "3 star",
+                "count": 142568
+            },
+            {
+                "name": "4 star",
+                "count": 624154
+            },
+            {
+                "name": "5 star",
+                "count": 841
+            }
+        ]
+    },
+    {
+        "image": "Gmail.png",
+        "title": "Gmail",
+        "companyName": "Google LLC",
+        "id": 6,
+        "description": "Gmail is a widely used app that helps users organize daily life with powerful tools, personalized recommendations, and seamless integrations with other services. provide secure, cloud-based storage and collaboration tools that let users access files from any device and work together in real-time. focus on productivity with features like shared notes, reminders, sync across devices, and advanced search. The app regularly receives updates to improve performance, security, and user experience.",
+        "size": 27.5,
+        "reviews": 186240,
+        "ratingAvg": 4.27,
+        "downloads": 1000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 5587
+            },
+            {
+                "name": "2 star",
+                "count": 7449
+            },
+            {
+                "name": "3 star",
+                "count": 14899
+            },
+            {
+                "name": "4 star",
+                "count": 65184
+            },
+            {
+                "name": "5 star",
+                "count": 100121
+            }
+        ]
+    },
+    {
+        "image": "GoogleMaps.png",
+        "title": "Google Maps",
+        "companyName": "Google LLC",
+        "id": 7,
+        "description": "Google Maps is a widely used app that helps users offer intelligent navigation, live traffic updates, and local place recommendations to make travel and commuting easier. organize daily life with powerful tools, personalized recommendations, and seamless integrations with other services. provide secure, cloud-based storage and collaboration tools that let users access files from any device and work together in real-time. The app regularly receives updates to improve performance, security, and user experience.",
+        "size": 309.1,
+        "reviews": 412004,
+        "ratingAvg": 4.27,
+        "downloads": 1000000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 12360
+            },
+            {
+                "name": "2 star",
+                "count": 16480
+            },
+            {
+                "name": "3 star",
+                "count": 32960
+            },
+            {
+                "name": "4 star",
+                "count": 144201
+            },
+            {
+                "name": "5 star",
+                "count": 222
+            }
+        ]
+    },
+    {
+        "image": "Spotify.png",
+        "title": "Spotify",
+        "companyName": "Spotify Ltd.",
+        "id": 8,
+        "description": "Spotify is a widely used app that helps users deliver high-quality streaming experiences, smart search, and tailored suggestions based on user preferences and behavior. discover, create, and share content—ranging from photos and short videos to long-form media—while providing strong privacy controls and customization. allow creators to publish, monetize, and grow an audience using analytics and promotion tools. The app regularly receives updates to improve performance, security, and user experience.",
+        "size": 83.9,
+        "reviews": 162436,
+        "ratingAvg": 4.27,
+        "downloads": 500000000,
+        "ratings": [
+            {
+                "name": "1 star",
+                "count": 4873
+            },
+            {
+                "name": "2 star",
+                "count": 6497
+            },
+            {
+                "name": "3 star",
+                "count": 12995
+            },
+            {
+                "name": "4 star",
+                "count": 56852
+            },
+            {
+                "name": "5 star",
+                "count": 87919
+            }
+        ]
+    }
+]
