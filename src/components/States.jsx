@@ -6,7 +6,7 @@ const States = () => {
         <h4 className="font-bold text-5xl text-center mb-10">
           Trusted by Millions, Built for You
         </h4>
-        <div className="flex justify-around items-center gap-6">
+        <div className="flex flex-col lg:flex-row justify-around items-center gap-6">
           <div className="flex flex-col justify-center items-center gap-4">
             <p>Total Downloads</p>
             <h6 className="font-extrabold text-6xl">29.6M</h6>
