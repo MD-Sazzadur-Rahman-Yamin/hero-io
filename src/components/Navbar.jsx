@@ -1,6 +1,7 @@
 import React from "react";
 import loge from "../assets/logo.png";
 import { Links, NavLink } from "react-router";
+import { Github } from "lucide-react";
 
 const Navbar = () => {
   const links = (
@@ -60,7 +61,8 @@ const Navbar = () => {
               target="_blank"
               className="btn"
             >
-              Button
+              <Github />
+              <span>Contribution</span>
             </a>
           </div>
         </div>
