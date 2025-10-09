@@ -52,12 +52,18 @@ const Apps = () => {
         </label>
       </div>
       <div className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        {searchedApp.map((SingleAppData) => (
-          <AppCard
-            SingleAppData={SingleAppData}
-            key={SingleAppData.id}
-          ></AppCard>
-        ))}
+        {searchedApp.length > 0 ? (
+          searchedApp.map((SingleAppData) => (
+            <AppCard
+              SingleAppData={SingleAppData}
+              key={SingleAppData.id}
+            ></AppCard>
+          ))
+        ) : (
+          <p className="col-span-full text-center text-blue-500 font-semibold text-6xl">
+            No App Found
+          </p>
+        )}
       </div>
     </div>
   );

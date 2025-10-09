@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
-import downloadsImg from '../assets/icon-downloads.png'
-// import useAPI from "../Hooks/useAPI";
+import downloadsImg from "../assets/icon-downloads.png";
+import { toast } from "react-toastify";
 
 const AppDetils = () => {
-  
   const { id } = useParams();
-  const stringId = parseInt(id);
+  const numId = parseInt(id);
   const appData = useLoaderData();
-  const singleAppData = appData.find((book) => book.id === stringId);
+  const singleAppData = appData.find((book) => book.id === numId);
   const {
     image,
     title,
@@ -20,6 +19,19 @@ const AppDetils = () => {
     downloads,
     ratings,
   } = singleAppData;
+    const [installed, setInstalled] = useState(() => {
+      const existentList =JSON.parse(localStorage.getItem("InstalledApp")) || [];
+      return existentList.some((appId) => parseInt(appId) === singleAppData.id);
+    });
+
+    const InstallAppBtn = () => {
+      const existentList =
+        JSON.parse(localStorage.getItem("InstalledApp")) || [];
+      const updatedList = [...existentList, id];
+      localStorage.setItem("InstalledApp", JSON.stringify(updatedList));
+      setInstalled(true);
+      toast("App installed successfully");
+    };
 
   return (
     <div className="max-w-[1440px] mx-auto my-20">
@@ -54,7 +66,13 @@ const AppDetils = () => {
             </div>
           </div>
           <div className="lg:text-start text-center">
-            <button className="btn btn-active btn-success text-white">{`Install Now ${size}`}</button>
+            <button
+              onClick={() => InstallAppBtn()}
+              className="btn btn-active btn-success text-white"
+              disabled={installed}
+            >
+              {installed ? `Installed` : `Install Now ${size}`}
+            </button>
           </div>
         </div>
       </div>

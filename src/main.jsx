@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Apps from './pages/Apps';
 import Installation from './pages/Installation'
 import AppDetils from "./pages/AppDetils";
+import NoAppFound from './pages/NoAppFound';
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
         loader: () => fetch("/appData.json"),
         Component: AppDetils,
       },
+      {
+        path: '/no-app-found',
+        Component: NoAppFound
+      }
     ],
   },
 ]);
