@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import BookCard from "./BookCard";
+import AppCard from "./AppCard";
 
 const TrandingApps = ({ trandingAppData }) => {
   return (
@@ -12,10 +12,10 @@ const TrandingApps = ({ trandingAppData }) => {
         </p>
         <div className="my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {trandingAppData.map((trandingSingleAppData) => (
-            <BookCard
+            <AppCard
               trandingSingleAppData={trandingSingleAppData}
               key={trandingSingleAppData.id}
-            ></BookCard>
+            ></AppCard>
           ))}
         </div>
         <Link to="apps">

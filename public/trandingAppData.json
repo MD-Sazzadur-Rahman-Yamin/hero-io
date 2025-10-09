@@ -1,6 +1,6 @@
 [
     {
-        "image": "wa.jpg",
+        "image": "/wa.jpg",
         "title": "WhatsApp Messenger",
         "companyName": "Meta Platforms, Inc.",
         "id": 1,
@@ -33,7 +33,7 @@
         ]
     },
     {
-        "image": "facebook.jpg",
+        "image": "/facebook.jpg",
         "title": "Facebook",
         "companyName": "Meta Platforms, Inc.",
         "id": 2,
@@ -66,7 +66,7 @@
         ]
     },
     {
-        "image": "instra.jpg",
+        "image": "/instra.jpg",
         "title": "Instagram",
         "companyName": "Meta Platforms, Inc.",
         "id": 3,
@@ -99,7 +99,7 @@
         ]
     },
     {
-        "image": "TikTok.png",
+        "image": "/TikTok.png",
         "title": "TikTok",
         "companyName": "TikTok Pte. Ltd.",
         "id": 4,
@@ -132,7 +132,7 @@
         ]
     },
     {
-        "image": "YouTube.png",
+        "image": "/YouTube.png",
         "title": "YouTube",
         "companyName": "Google LLC",
         "id": 5,
@@ -165,7 +165,7 @@
         ]
     },
     {
-        "image": "Gmail.png",
+        "image": "/Gmail.png",
         "title": "Gmail",
         "companyName": "Google LLC",
         "id": 6,
@@ -198,7 +198,7 @@
         ]
     },
     {
-        "image": "GoogleMaps.png",
+        "image": "/GoogleMaps.png",
         "title": "Google Maps",
         "companyName": "Google LLC",
         "id": 7,
@@ -231,7 +231,7 @@
         ]
     },
     {
-        "image": "Spotify.png",
+        "image": "/Spotify.png",
         "title": "Spotify",
         "companyName": "Spotify Ltd.",
         "id": 8,

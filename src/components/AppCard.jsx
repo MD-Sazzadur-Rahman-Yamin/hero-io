@@ -2,10 +2,10 @@ import React from 'react';
 import { Star, Download } from "lucide-react";
 import { Link } from 'react-router';
 
-const BookCard = ({ trandingSingleAppData }) => {
+const AppCard = ({ trandingSingleAppData }) => {
     const { image, title, downloads, ratingAvg, id } = trandingSingleAppData;
   return (
-    <Link className="block h-full" to={`book-detils/${id}`}>
+    <Link className="block h-full" to={`app-detils/${id}`}>
       <div className="p-4 h-full bg-white flex flex-col items-center justify-between gap-4 rounded-2xl shadow hover:shadow-2xl transform hover:-translate-y-2 duration-200 ease-linear cursor-pointer">
         <div className="max-h-72 max-w-72 mx-auto">
           <img className="mx-auto" src={image} alt={title} />
@@ -26,4 +26,4 @@ const BookCard = ({ trandingSingleAppData }) => {
   );
 };
 
-export default BookCard;
+export default AppCard;

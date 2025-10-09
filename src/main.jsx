@@ -8,8 +8,7 @@ import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home';
 import Apps from './pages/Apps';
 import Installation from './pages/Installation'
-import BookDetils from './pages/BookDetils';
-// import router from "./routes/Routes.jsx";
+import AppDetils from "./pages/AppDetils";
 
 
 const router = createBrowserRouter([
@@ -20,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("trandingAppData.json"),
+        loader: () => fetch("/trandingAppData.json"),
         path: "/",
         Component: Home,
       },
@@ -33,8 +32,9 @@ const router = createBrowserRouter([
         Component: Installation,
       },
       {
-        path: "book-detils/:id",
-        Component: BookDetils
+        path: "app-detils/:id",
+        loader: () => fetch("/appData.json"),
+        Component: AppDetils,
       },
     ],
   },
