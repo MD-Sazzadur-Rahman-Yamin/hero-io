@@ -19,7 +19,6 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("/trandingAppData.json"),
         path: "/",
         Component: Home,
       },

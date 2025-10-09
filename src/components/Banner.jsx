@@ -22,7 +22,7 @@ const Banner = () => {
         </p>
         <div className="my-10 flex justify-center items-center gap-4">
           <a href="https://play.google.com/store/games?hl=en" target="_blank">
-            <div className="border-[#D2D2D2] rounded-2xl border-2 px-6 py-3">
+            <div className="border-[#D2D2D2] rounded-2xl border-2 px-6 py-3 shadow hover:shadow-2xl transform hover:-translate-y-2 duration-200 ease-linear">
               <div className="flex items-center justify-center gap-2.5">
                 <img className="max-w-8" src={playStore} alt="" />
                 <h6 className="text-xl font-semibold">Google Play</h6>
@@ -30,7 +30,7 @@ const Banner = () => {
             </div>
           </a>
           <a href="https://www.apple.com/app-store/" target="_blank">
-            <div className="border-[#D2D2D2] rounded-2xl border-2 px-6 py-3">
+            <div className="border-[#D2D2D2] rounded-2xl border-2 px-6 py-3 shadow hover:shadow-2xl transform hover:-translate-y-2 duration-200 ease-linear">
               <div className="flex items-center justify-center gap-2.5">
                 <img className="max-w-8" src={appStore} alt="" />
                 <h6 className="text-xl font-semibold">App Store</h6>

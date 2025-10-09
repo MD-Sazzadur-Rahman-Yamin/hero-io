@@ -1,12 +1,13 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router";
 import downloadsImg from '../assets/icon-downloads.png'
+// import useAPI from "../Hooks/useAPI";
 
 const AppDetils = () => {
+  
   const { id } = useParams();
   const stringId = parseInt(id);
   const appData = useLoaderData();
-  console.log(typeof appData, appData);
   const singleAppData = appData.find((book) => book.id === stringId);
   const {
     image,
@@ -30,7 +31,7 @@ const AppDetils = () => {
           <div>
             <h2 className="font-bold text-3xl">{title}</h2>
             <h4 className="font-semibold text-xl mt-2">
-              <span className="text-[#627382]">Developed by:</span>{" "}
+              <span className="text-[#627382]">Developed by:</span>
               <span className="text-[#632EE3]">{companyName}</span>
             </h4>
           </div>
@@ -53,7 +54,7 @@ const AppDetils = () => {
             </div>
           </div>
           <div className="lg:text-start text-center">
-            <button class="btn btn-active btn-success">{`Install Now ${size} MB`}</button>
+            <button className="btn btn-active btn-success text-white">{`Install Now ${size}`}</button>
           </div>
         </div>
       </div>
