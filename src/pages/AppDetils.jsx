@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import downloadsImg from "../assets/icon-downloads.png";
 import { toast } from "react-toastify";
-
+import {BarChart,Bar,XAxis,YAxis,CartesianGrid,Tooltip,ResponsiveContainer} from "recharts";
 const AppDetils = () => {
   const { id } = useParams();
   const numId = parseInt(id);
@@ -19,6 +19,7 @@ const AppDetils = () => {
     downloads,
     ratings,
   } = singleAppData;
+  console.log(ratings)
     const [installed, setInstalled] = useState(() => {
       const existentList =JSON.parse(localStorage.getItem("InstalledApp")) || [];
       return existentList.some((appId) => parseInt(appId) === singleAppData.id);
@@ -77,6 +78,26 @@ const AppDetils = () => {
         </div>
       </div>
       <hr className="my-8" />
+      <div className="w-full h-56">
+        <ResponsiveContainer height="100%" width="100%">
+          <BarChart
+            layout="vertical"
+            data={ratings}
+            margin={{ top: 5, right: 30, left: 60, bottom: 5 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis type="number" />
+            <YAxis dataKey="name" type="category" />
+            <Tooltip />
+            <Bar
+              dataKey="count"
+              fill="orange"
+              barSize={30}
+              radius={[5, 5, 5, 5]}
+            />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
       <hr className="my-8" />
       <div>
         <h6 className="font-semibold text-2xl text-[#001931]">Description</h6>
