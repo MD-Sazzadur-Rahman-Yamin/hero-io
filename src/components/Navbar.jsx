@@ -1,6 +1,6 @@
 import React from "react";
 import loge from "../assets/logo.png";
-import { Link, Links, NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { Github } from "lucide-react";
 
 const Navbar = () => {
