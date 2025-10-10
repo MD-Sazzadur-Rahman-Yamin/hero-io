@@ -31,7 +31,7 @@ const AppDetils = () => {
       const updatedList = [...existentList, id];
       localStorage.setItem("InstalledApp", JSON.stringify(updatedList));
       setInstalled(true);
-      toast("App installed successfully");
+      toast("App installed successfully in your device");
     };
 
   return (

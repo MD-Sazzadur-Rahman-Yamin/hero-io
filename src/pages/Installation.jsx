@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useAPI from "../Hooks/useAPI";
 import InstallationCard from "../components/InstallationCard";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const { data } = useAPI();
@@ -12,7 +13,13 @@ const Installation = () => {
     installedApp.includes(app.id.toString())
   );
 
-  // const UnnstallAppBtn = () =>
+  const UninstallAppBtn = (id) => {
+    const updatedList = installedApp.filter((appId) => appId !== id.toString());
+    setInstalledApp(updatedList);
+    localStorage.setItem("InstalledApp", JSON.stringify(updatedList));
+    toast("App is uninstalled from your device");
+    console.log(updatedList);
+  };
   console.log(installedAppData);
 
   return (
@@ -48,13 +55,14 @@ const Installation = () => {
         {installedAppData.length > 0 ? (
           installedAppData.map((SingleAppData) => (
             <InstallationCard
+              UninstallAppBtn={UninstallAppBtn}
               SingleAppData={SingleAppData}
               key={SingleAppData.id}
             ></InstallationCard>
           ))
         ) : (
           <p className="col-span-full text-center text-blue-500 font-semibold text-6xl">
-            No App Found
+            No App installed
           </p>
         )}
       </div>

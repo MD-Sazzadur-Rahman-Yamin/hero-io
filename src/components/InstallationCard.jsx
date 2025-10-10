@@ -1,8 +1,8 @@
 import { Download, Star } from 'lucide-react';
 import React from 'react';
 
-const InstallationCard = ({SingleAppData}) => {
-     const { image, title, downloads, ratingAvg, size } = SingleAppData;
+const InstallationCard = ({ SingleAppData, UninstallAppBtn }) => {
+  const { image, title, downloads, ratingAvg, size, id } = SingleAppData;
   return (
     <div className="flex justify-between items-center bg-white p-4 gap-4">
       <div className="max-h-20 max-w-20 ">
@@ -23,7 +23,12 @@ const InstallationCard = ({SingleAppData}) => {
         </div>
       </div>
       <div>
-        <button className="btn btn-active btn-success text-white">Uninstall</button>
+        <button
+          onClick={() => UninstallAppBtn(id)}
+          className="btn btn-active btn-success text-white"
+        >
+          Uninstall
+        </button>
       </div>
     </div>
   );
