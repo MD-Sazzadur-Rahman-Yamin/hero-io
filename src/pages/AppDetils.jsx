@@ -19,7 +19,6 @@ const AppDetils = () => {
     downloads,
     ratings,
   } = singleAppData;
-  console.log(ratings)
     const [installed, setInstalled] = useState(() => {
       const existentList =JSON.parse(localStorage.getItem("InstalledApp")) || [];
       return existentList.some((appId) => parseInt(appId) === singleAppData.id);

@@ -29,7 +29,6 @@ const Installation = () => {
     localStorage.setItem("InstalledApp", JSON.stringify(updatedList));
     toast("App is uninstalled from your device");
   };
-  console.log(installedAppData);
   return (
     <div className="my-20 max-w-[1440px] mx-auto">
       <div className="text-center">

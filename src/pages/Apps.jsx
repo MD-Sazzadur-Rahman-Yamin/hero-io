@@ -12,8 +12,6 @@ const Apps = () => {
         app.title.toLocaleLowerCase().includes(filteredSearch)
       )
     : data;
-  console.log(searchedApp);
-
   return (
     <div className="my-20 max-w-[1440px] mx-auto">
       <div className="text-center">
