@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import useAPI from "../Hooks/useAPI";
 import InstallationCard from "../components/InstallationCard";
 import { toast } from "react-toastify";
+import NoAppFound from "./NoAppFound";
 
 const Installation = () => {
   const { data } = useAPI();
+  const [sort, setSort] = useState("none");
   const [installedApp, setInstalledApp] = useState(() => {
     const existentList = JSON.parse(localStorage.getItem("InstalledApp")) || [];
     return existentList;
@@ -12,16 +14,22 @@ const Installation = () => {
   const installedAppData = data.filter((app) =>
     installedApp.includes(app.id.toString())
   );
-
+  const sortedItems = () => {
+    if (sort === "size-ascending") {
+      return [...installedAppData].sort((a, b) => a.size - b.size);
+    } else if (sort === "size-descending") {
+      return [...installedAppData].sort((a, b) => b.size - a.size);
+    } else {
+      return installedAppData;
+    }
+  };
   const UninstallAppBtn = (id) => {
     const updatedList = installedApp.filter((appId) => appId !== id.toString());
     setInstalledApp(updatedList);
     localStorage.setItem("InstalledApp", JSON.stringify(updatedList));
     toast("App is uninstalled from your device");
-    console.log(updatedList);
   };
   console.log(installedAppData);
-
   return (
     <div className="my-20 max-w-[1440px] mx-auto">
       <div className="text-center">
@@ -34,26 +42,21 @@ const Installation = () => {
       </div>
       <div className="my-4 flex justify-between items-center">
         <h6 className="font-semibold text-2xl text-[#001931]">{`${installedAppData.length} Apps Found`}</h6>
-        <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn m-1">
-            Sort By Size ⬇️
-          </div>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+        <label className="form-control w-full max-w-3xs">
+          <select
+            className="select select-bordered"
+            value={sort}
+            onChange={(e) => setSort(e.target.value)}
           >
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 2</a>
-            </li>
-          </ul>
-        </div>
+            <option value="none">Sort By Size</option>
+            <option value="size-ascending">Low-High</option>
+            <option value="size-descending">High-Low</option>
+          </select>
+        </label>
       </div>
       <div className="flex flex-col gap-4">
         {installedAppData.length > 0 ? (
-          installedAppData.map((SingleAppData) => (
+          sortedItems().map((SingleAppData) => (
             <InstallationCard
               UninstallAppBtn={UninstallAppBtn}
               SingleAppData={SingleAppData}
@@ -61,9 +64,7 @@ const Installation = () => {
             ></InstallationCard>
           ))
         ) : (
-          <p className="col-span-full text-center text-blue-500 font-semibold text-6xl">
-            No App installed
-          </p>
+          <NoAppFound></NoAppFound>
         )}
       </div>
     </div>

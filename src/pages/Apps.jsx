@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import useAPI from "../Hooks/useAPI";
 import AppCard from "../components/AppCard";
+import NoAppFound from "./NoAppFound";
 
 const Apps = () => {
   const { data } = useAPI();
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const filteredSearch = search.trim().toLocaleLowerCase();
   const searchedApp = filteredSearch
     ? data.filter((app) =>
@@ -60,9 +61,9 @@ const Apps = () => {
             ></AppCard>
           ))
         ) : (
-          <p className="col-span-full text-center text-blue-500 font-semibold text-6xl">
-            No App Found
-          </p>
+          <div className="col-span-full">
+            <NoAppFound></NoAppFound>
+          </div>
         )}
       </div>
     </div>

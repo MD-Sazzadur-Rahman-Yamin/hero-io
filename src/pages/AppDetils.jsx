@@ -72,7 +72,7 @@ const AppDetils = () => {
               className="btn btn-active btn-success text-white"
               disabled={installed}
             >
-              {installed ? `Installed` : `Install Now ${size}`}
+              {installed ? `Installed` : `Install Now (${size} MB)`}
             </button>
           </div>
         </div>

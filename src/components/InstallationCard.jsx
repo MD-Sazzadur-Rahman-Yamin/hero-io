@@ -19,7 +19,7 @@ const InstallationCard = ({ SingleAppData, UninstallAppBtn }) => {
             <Star />
             {ratingAvg}
           </span>
-          <span className="text-[#627382]">{size}</span>
+          <span className="text-[#627382]">{`${size} MB`}</span>
         </div>
       </div>
       <div>
